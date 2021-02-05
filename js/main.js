@@ -44,7 +44,7 @@ $(document).ready(function() {
     },
   });
 
-  $("#review1").on('click', function() {
+  $("#review-1").on('click', function() {
 
     $.fancybox.open([{
         src: 'https://source.unsplash.com/IvfoDk30JnI/1500x1000',
@@ -88,7 +88,7 @@ $(document).ready(function() {
       let plus = document.querySelector('.plus');
       let minus = document.querySelector('.minus');
       let counter = document.querySelector('.counter-input');
-      plus.onclick = function() {      
+      plus.onclick = function() {
         b = 1 + b;
         counter.value = b;
         console.log(2)
