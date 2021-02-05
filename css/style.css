@@ -164,6 +164,11 @@ body{
   margin-top: 36px;
   cursor: pointer;
   border: none;
+  transition: transform 0.1 scale
+}
+
+.button:active{
+  transform: scale(0.95);
 }
 
 .reviews{
@@ -535,5 +540,8 @@ body{
   }
   .footer-info{
     text-align: left;
+  }
+  .review-slide{
+    padding: 0 10px;
   }
 }
