@@ -1,0 +1,539 @@
+@font-face {
+font-family: 'Gotham Pro Light';
+
+src: url('../fonts/GothamPro-Light.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Gotham Pro Medium';
+
+src: url('../fonts/GothamPro-Medium.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Gotham Pro';
+
+src: url('../fonts/GothamPro.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+body{
+  margin: 0;
+  background-color: #292929;
+  color: #fff;
+  font-family: 'Gotham Pro', sans-serif;
+}
+
+*, *::after *::before{
+  box-sizing: border-box;
+}
+
+.header{
+  padding-top: 50px;
+}
+
+.text-color-red{
+  color: #ff3469;
+  font-family: "Gotham Pro Medium",sans-serif;
+}
+
+.header-description{
+  font-family: "Gotham Pro Light",sans-serif;
+  font-size: 12px;
+}
+
+.header-phone{
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  display: block;
+}
+
+.header-info{
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 7px;
+  display: block;
+}
+
+.callback{
+  color: #ff3469;
+  display: block;
+  margin-top: 16px;
+  font-size: 16px;
+}
+
+.slide-flower{
+  width: 88px;
+}
+
+.flowers-slider{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 83px;
+  margin-top: 87px;
+}
+
+
+.flowers-slider .swiper-button-prev::after,
+.flowers-slider .swiper-button-next::after{
+  color: gray;
+  font-size: 18px;
+}
+
+.flowers-slider .swiper-button-prev:hover::after,
+.flowers-slider .swiper-button-next:hover::after{
+  color: red;
+  font-size: 18px;
+}
+
+
+
+.reviews-slider .swiper-button-prev::after,
+.reviews-slider .swiper-button-next::after{
+  color: red;
+  font-size: 30px;
+  transition: color .3s linear;
+}
+
+.reviews-slider .swiper-button-prev:hover::after,
+.reviews-slider .swiper-button-next:hover::after{
+  color: gray;
+  font-size: 30px;
+}
+
+.reviews-slider .swiper-button-next:focus::after{
+  color: gray;
+  font-size: 20px;
+}
+
+
+.hero{
+  padding-top: 100px;
+  text-align: center;
+  padding-bottom: 77px;
+  border-bottom: 1px solid #4c4c4c;
+}
+
+.hero-title{
+  font-size: 34px;
+  margin: auto;
+  margin-bottom: 34px;
+  text-transform: uppercase;
+  line-height: normal;
+  letter-spacing: 0.34;
+  font-family: "Gotham Pro Medium",sans-serif;
+  max-width: 652px;
+}
+
+.hero-description{
+  font-family: "Gotham Pro Light",sans-serif ;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.18;
+  line-height: 1.4;
+  margin: auto;
+  max-width: 590px;
+}
+
+
+.hero-cta{
+  display: block;
+  font-size: 19px;
+  font-family: "Gotham Pro Light",sans-serif ;
+  text-transform: uppercase;
+}
+
+.button{
+  display: inline-block;
+  padding-top: 30px;
+  padding-bottom: 26px;
+  padding-left: 65px;
+  padding-right: 65px;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ff2e55;
+  margin-top: 36px;
+  cursor: pointer;
+  border: none;
+}
+
+.reviews{
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.reviews-slider{
+  margin-top: 98px;
+}
+
+.swiper-slide.review-slide{
+  padding: 0 20px;
+}
+
+.review-image{
+  width: 220px;
+  height: 220px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  font-size: 20px;
+  font-family: "Gotham Pro Light",sans-serif ;
+  position: relative;
+  margin-right: 52px;
+}
+
+.review-image::before{
+  content:'';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.67);
+  position: absolute;
+}
+
+.review-image > *{
+  position: relative;
+}
+
+.review-image-1{
+  background-color: ;
+  background: url('../img/reviews/bgr1.jpg');
+  -webkit-background-size: 150%;
+  background-size: 150%;
+  background-position: center;
+}
+
+.review-image-2{
+  background-color: ;
+  background: url('../img/reviews/bgr2.jpg');
+  -webkit-background-size: 150%;
+  background-size: 150%;
+  background-position: center;
+}
+
+.review-name{
+  margin-bottom: 7px;
+}
+
+.review-text{
+  font-size: 18px;
+  letter-spacing: 0.18px;
+  line-height: 1.4;
+}
+
+.review{
+  width: 80%;
+}
+
+.review-link{
+  color: #f24841;
+}
+
+.section-title{
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.advantages{
+  text-align: center;
+  padding-bottom: 100px;
+  padding-top: 50px;
+  border-bottom: 1px solid #4c4c4c;
+}
+
+.advantages-wrapper{
+  min-height: 85px;
+  margin-bottom: 30px;
+}
+
+.advantages-title{
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 1.4;
+  max-width: 270px;
+  margin: auto;
+}
+
+.goods {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.section-description{
+  font-size: 18px;
+  text-align: center;
+}
+
+.card{
+  margin-top: 27px;
+  text-align: center;
+  border: 3px solid white;
+  padding: 33px 35px 30px 35px;
+}
+
+.card-title{
+  margin-top: 23px;
+  margin-bottom: 20px;
+
+  text-transform: uppercase;
+}
+
+.card-label{
+  font-size: 14px;
+  display: block;
+  margin-bottom: 7px;
+  margin-top: 20px;
+}
+
+.color-label{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.color-input{
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  z-index: -9;
+}
+
+.color-label.white{
+  background-color: #ffffff;
+}
+
+.color-label.biege{
+  background-color: #F7B496;
+}
+
+.color-label.pink{
+  background-color: #ED366E;
+}
+
+.color-label.red{
+  background-color: #FF0000;
+}
+
+.color-label.blue{
+  background-color: #12129D;
+}
+
+.counter-input{
+  border: 2px solid #fff;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #292929;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.counter-button{
+  width: 40px;
+  h40
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+  background-color: #292929;
+  border: none;
+  cursor: pointer;
+}
+
+.card-button{
+  font-size: 14px;
+  padding-top: 16px;
+  padding-bottom: 13px;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.more{
+  font-size: 14px;
+  color: #f24841;
+  display: block;
+  text-align: center;
+  margin-top: 39px;
+  padding: 10px;
+}
+
+.more:after{
+  display: inline-block;
+  content: '';
+  width: 10px;
+  height: 4px;
+  background: url('../img/caret.svg') no-repeat center;
+  margin-left: 14px;
+  vertical-align: middle;
+}
+
+.offer{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #1a1a1a;
+  text-align: center;
+}
+
+.offer-link{
+  text-transform: uppercase;
+  display: block;
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 65px;
+}
+
+.offer-label{
+  margin-bottom: 22px;
+  font-size: 14px;
+  display: block;
+}
+
+.offer-phone{
+  font-size: 36px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-menu{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 33px;
+}
+
+.footer-menu-link{
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.footer-menu-item{
+  margin-right: 30px;
+}
+
+.social{
+  font-size: 16px;
+}
+
+.footer-label{
+  display: block;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.footer-info{
+  text-align: right;
+}
+
+.footer-phone{
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.second-footer{
+  background-color: #fff;
+  padding-top: 48px;
+  padding-bottom: 44px;
+}
+
+.footer-description{
+  font-size: 12px;
+  color: #000;
+}
+
+.footer-digital{
+  color: #000;
+  display: inline-block;
+  font-size: 12px;
+}
+
+.digital-link{
+  color: #000;
+}
+
+.modal{
+  display: none;
+}
+
+.modal-title{
+  color: #292929;
+}
+
+.modal-button{
+  width: 100%;
+}
+
+.modal-input{
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+
+}
+
+.hidden{
+  display: none;
+}
+
+@media (max-width: 768px){
+  .header{
+    text-align: center;
+  }
+  .header-contacts{
+
+    text-align: center;
+  }
+  .hero{
+    padding-top: 50px;
+  }
+  .hero-title{
+    font-size: 24px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  .hero-description{
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .button{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .colors{
+    max-width: 250px;
+    margin: auto;
+  }
+  .card-label{
+    margin: 20px auto;
+    display: block;
+  }
+  .footer-info{
+    text-align: left;
+  }
+}
+@media (max-width: 576px){
+  .offer-title{
+    text-align: left;
+  }
+  .offer{
+    text-align: left;
+  }
+  .footer-info{
+    text-align: left;
+  }
+}
